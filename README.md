@@ -1,10 +1,7 @@
 # Emperical-Testing
 # Tester class for Studing the improvements of merge sort
 
-
-
-
-public class EmpericalTest {
+	public class EmpericalTest {
 	public static void main(String[] args) {
 		File f1 = new File();
 		File1 f11 = new File1();
@@ -43,7 +40,8 @@ public class EmpericalTest {
 
 			System.out.println("Processing " + i);// know where I am at for
 													// testing purposes
-			f1.Append("                       Trial " + i + " " + s1.elapsedTime());
+			f1.Append("                       Trial " + i + " "
+					+ s1.elapsedTime());
 			totalTime += s1.elapsedTime();
 			avgTime = totalTime / i;
 
@@ -90,8 +88,11 @@ public class EmpericalTest {
 		f1.Append("   \n" + "    Average Time for Merge sort is " + avgTime);
 		f2.Append("   \n" + "    Average Time for Sorted Arrays is " + avgTime3);
 		f3.Append("   \n" + "    Average Time for Small Arrays is " + avgTime4);
-		f4.Append("    \n"+"     Average Time for the over all Improvements is " + avgTime1);
+		f4.Append("    \n"
+				+ "     Average Time for the over all Improvements is "
+				+ avgTime1);
 		f11.Append("   \n" + "    Average Time for Small Arrays is " + avgTime2);
 	}
 }
+
 
